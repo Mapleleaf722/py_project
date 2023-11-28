@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="keywords" content="python,python学习,python自学,python学习网站,Python自学网,自学python,Python全栈,Python视频教程,Python教程">
+    <meta name="description" content="Python自学网：精心录制完整Python全栈开发视频教程，WEB开发、爬虫、运维自动化、GUI、数据分析、机器学习、量化交易、自动化办公、自动化测试...，一站式从Python基础入门到精通全栈开发的Python学习网站。">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【Python自学网】- Python全栈视频教程_Python在线学习培训课程</title>
+
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2682241_2ok8m8yeyvq.css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/index.js"></script>
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="container header-main">
+            <!-- 图标 -->  
+            <i class="iconfont icon-mulu-lujing mulu"></i>
+            <a class="logo" href="/" title="Python自学网"><strong>Python自学网</strong></a>
+            <nav class="nav">
+                <ul class="nav-main">
+                    <li class="nav-list"><a href="/" title="Python自学网">首页</a></li>
+                    <li class="nav-list"><a href="/video.html" title="Python视频教程" style="color: #ff8282;">视频教程</a></li>
+                    <li class="nav-list"><a href="/article-list-exercise.html" title="练手习题">练手习题</a></li>
+                    <li class="nav-list has-menu">
+                        <a href="javascript:;" title="文档教程">中文文档<i class="iconfont icon-down active"></i></a>
+                        <ul class="menu">
+                            <li class="menu-list"><a href="/document-column-python.html" title="Python基础教程文档">Python教程</a></li>
+                            <li class="menu-list"><a href="/document-column-django.html" title="Django教程文档">Django教程</a></li>
+                            <li class="menu-list"><a href="/document-column-PyQt5.html" title="PyQt5教程文档">PyQt5教程</a></li>
+                            <li class="menu-list"><a href="/document-column-module.html" title="Python通用模块文档">Python模块</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list"><a href="/download.html" title="资源下载">资源下载</a></li>
+                    <li class="nav-list has-menu">
+                        <a href="/article-list-blog.html"  title="博客文章">博客文章<i class="iconfont icon-down"></i></a>
+                        <ul class="menu">
+                            <li class="menu-list"><a href="/article-list-technical.html" title="技术交流">技术交流</a></li>
+                            <li class="menu-list"><a href="/article-list-question.html" title="常见问题">常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list"><a href="/pay/" target="_blank" title="vip"  style="color: #ff8282;" rel="nofollow">加入会员</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <!-- 搜索 -->
+                <div class="search">
+                    <div class="search-box">          
+                        <form class="form-right" action="/search/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="ZZfxgMbGhCp21T8QeC7tONOD7hezX17wDHQvoifV9zI8Zdm8KieIcfj6imRUN5t9">
+                            <div class="all-search">
+                                <input class="typeIn" type="text" value="" name="search" placeholder="请输入关键词">
+                            </div>
+                            <button class="searchBtn" type="submit">
+                                <img src="/static/images/sousuo.png" alt="搜索">
+                            </button>
+                        </form> 
+                    </div>
+                </div>    
+<!-- 关于VIP -->
+                <!-- 如果没有注册 -->
+                
+                <div class="vp">
+                    <a class="qz-v" href="/pay/" target="_blank" rel="nofollow">
+                        <div class="img">
+                            <img src="/static/images/qz-v.png" alt="pay">
+                        </div>
+                        <span>全站VIP</span>
+                    </a>
+                </div>
+                <!-- 注册登录 -->
+                <div class="info">
+                    <a class="register" href="/register/" target="_blank" rel="nofollow">注册</a>
+                    <span>|</span>
+                    <a class="logon" href="/login/" target="_blank" rel="nofollow">登录</a>
+                </div>
+                <!--如果是普通会员-->
+                
+<!-- 关于VIP -->
+                <!-- 登录后的vip头像 -->
+                <!-- 如果不是vip就把这个vip图index_user_v.png去掉 -->
+                <!-- <div class="user_info">
+                    <div class="user_img">
+                        <a class="user_a"  href="javascript:;">
+                            <img class="v_yes" src="./images/index_user_v.png" alt="">
+                        </a> 
+                    </div>   
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- 悬浮 -->
+    <div class="float-box">
+            <div class="float-text">学习路径</div>
+            <ul>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon1.png" alt="Python基础">
+                        <p>Python基础</p>   
+                    </div>
+                </li>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon2.png" alt="通用模块">
+                        <p>通用模块</p>
+                    </div>
+                </li>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon3.png" alt="数据库教程">
+                        <p>数据库教程</p>
+                    </div>
+                </li>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon4.png" alt="WEB开发">
+                        <p>WEB开发</p>
+                    </div>
+                </li>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon5.png" alt="GUI开发">
+                        <p>GUI开发</p>
+                    </div>
+                </li>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon6.png" alt="爬虫教程">
+                        <p>爬虫教程</p>
+                    </div>
+                </li>
+                <li class="float-list">
+                    <div class="list-text">
+                        <img src="/static/images/index-icon7.png" alt="自动化运维">
+                        <p>自动化运维</p>
+                    </div>
+                </li>
+                <li class="float-img">
+                    <a href="http://www.wakey.com.cn/pay/" rel="nofollow">
+                        <img src="/static/images/index-icon-09.jpg" alt="vip">
+                    </a>
+                    <div class="cha"></div>
+                </li>
+            </ul>
+        </div>
+    <!-- 主体 -->
+    <main class="margin-top">
+        <!-- 中间部分 -->
+        <div class="container clearfix">
+            <!-- 最上面 -->
+            <div class="index-top">
+                <ul>
+                    <li>
+                        <a href="/video-column-base.html" target="_blank" title="python基础教程">
+                            <img src="/static/images/python.png" alt="python基础教程">
+                            <div><strong>python基础教程</strong></div>
+                            <p>深入透彻的讲解Python全部语法，一次性吃透Python</p>
+                            <span>视频教程</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/video.html" target="_blank" title="WEB全栈开发视频教程">
+                            <img src="/static/images/web.png" alt="WEB全栈开发视频教程">
+                            <div><strong>WEB全栈开发视频教程</strong></div>
+                            <p>一套真正的WEB全栈教程，从安全到性能，更全面，更透彻！</p>
+                            <span>视频教程</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/video.html" target="_blank" title="爬虫视频教程">
+                            <img src="/static/images/spider.png" alt="爬虫视频教程">
+                            <div><strong>爬虫实战</strong></div>
+                            <p>真正的企业级，高并发分布式爬虫开发实战教程！</p>
+                            <span>视频教程</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/video.html" target="_blank" title="全站视频教程">
+                            <img src="/static/images/all.png" alt="全站视频教程">
+                            <div><strong>全站视频教程</strong></div>
+                            <p>所有课程随便学，一对一辅导学习无压力，顺利度过新手期！</p>
+                            <span>视频教程</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            
+            
+            <!-- 左侧边栏 -->
+            <div class="content-left doc-div">
+                
+                <!-- Python基础教程 -->
+                <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="Python基础教程">Python基础教程</h2>
+                        <a href="/video.html#base"><i class="iconfont icon-spbf"></i>视频教程-更新完成</a>
+                    </div>
+
+                    <ul class="clearfix">
+
+                        
+                        <li>
+                            <a href="/document-list-base-pc.html" title="计算机技术与网络基础知识总结" target="_blank">
+                                <strong>第1章：计算机基础知识</strong>
+                            </a>
+                            <p>从计算机和网络基础知识介绍开始，是语言学习的必要前提。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-python.html" title="python语言的特点和学习路线图" target="_blank">
+                                <strong>第2章：python学习路线图</strong>
+                            </a>
+                            <p>了解python的语言基础和发展史对python的学习更有帮助。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-pycharm.html" title="Python环境安装使用方法_PyCharm安装使用教程" target="_blank">
+                                <strong>第3章：Python环境和PyCharm安装</strong>
+                            </a>
+                            <p>python开发环境安装和PyCharm编辑器使用教程</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-variable.html" title="Python基础数据类型-变量" target="_blank">
+                                <strong>第4章：Python变量</strong>
+                            </a>
+                            <p>变量变量是Python的基本数据类型，是计算机语言中能储存计算结果或能表示值的抽象概念。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-operator.html" title="Python运算符总结_Python运算符优先级介绍" target="_blank">
+                                <strong>第5章：运算符与优先级</strong>
+                            </a>
+                            <p>运算符和表达式是用来对程序代码进行运算的基本符号并得出相应结果。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-str.html" title="Python输入与输出及字符串常用处理方法" target="_blank">
+                                <strong>第6章：输入与输出和字符串方法</strong>
+                            </a>
+                            <p>输入（input()）与输出（print()）和字符串常用处理方法。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-flowpath.html" title="Python流程控制：判断（if）循环（while、for）终止循环（break、continue）" target="_blank">
+                                <strong>第7章：Python流程控制</strong>
+                            </a>
+                            <p>通过流程控制能够让代码更加灵活的改变运行顺序和方向，包含循环和判断。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-list.html" title="Python列表和列表的增删改查操作方法" target="_blank">
+                                <strong>第8章：列表和列表的增删改查操作</strong>
+                            </a>
+                            <p>了解列表数据类型，学会对列表数据的增删改查操作。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-tuple.html" title="Python元组和元组元素的增删改查等操作方法详解" target="_blank">
+                                <strong>第9章：元组和元组数据的操作</strong>
+                            </a>
+                            <p>元组是一种不可变的数据集，那么如何操作元组元素呢？</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-dict.html" title="Python字典构造和字典键值对的操作方法详解" target="_blank">
+                                <strong>第10章：字典构造和键值对的操作</strong>
+                            </a>
+                            <p>字典是以键值对的方式进行构造的一种数据类型，通过不可变的键对值进行操作。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-set.html" title="Python可变集合和不可变集合详解" target="_blank">
+                                <strong>第11章：可变集合和不可变集合</strong>
+                            </a>
+                            <p>集合的两种存在形态：交集，并集和差集实操教程。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-function.html" title="Python函数大全及9种函数类型详解" target="_blank">
+                                <strong>第12章：函数大全及类型详解</strong>
+                            </a>
+                            <p>函数是编程语言对代码封装的典型语法类型，python函数的种类丰富，功能强大。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-file.html" title="Python文件操作流程、打开模式和读写方法" target="_blank">
+                                <strong>第13章：Python文件操作方法</strong>
+                            </a>
+                            <p>通过Python对文件进行读写、关闭、遍历和修改操作。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-error.html" title="Python异常捕获和异常处理详解" target="_blank">
+                                <strong>第14章：Python异常捕获和处理</strong>
+                            </a>
+                            <p>程序的开发不可避免各种问题的出现，异常处理是一个很好的解决思路。Python提供一组完整的类来处理和捕获这些随时可能发生的异常信号。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-object.html" title="Python面向对象编程:类和对象的定义和使用" target="_blank">
+                                <strong>第15章：Python面向对象类和对象</strong>
+                            </a>
+                            <p>Python作为一门高级语言，同时也是一门全对象语言，面向对象自然是python的学习重点。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-base-model.html" title="Python包和模块安装导入方法" target="_blank">
+                                <strong>第16章：Python包和模块</strong>
+                            </a>
+                            <p>包和模块的使用是基于面向对象的文件级别的代码封装思维。</p>
+                        </li>
+                        
+
+                    </ul>   
+                </div>
+                
+                <!-- Python通用模块 -->
+                <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="Python通用模块教程">Python通用模块教程</h2>
+                        <a href="/video.html#base"><i class="iconfont icon-spbf"></i>视频教程-更新中...</a>
+                    </div>
+                    <ul class="clearfix">
+
+                        
+                        <li>
+                            <a href="/document-list-module-math.html" title="python math库_Python math数学模块_Python math函数api大全" target="_blank">
+                                <strong>第1章：math数学模块</strong>
+                            </a>
+                            <p>Python 的 math 模块是 Python 标准库中的一个数学库，提供了很多常用的数学函数和常量，例如三角函数、指数函数、对数函数、常数π等等。这些函数可以帮助我们进行复杂的数学计算。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-time.html" title="python time库_Python time时间模块_Python time函数api大全" target="_blank">
+                                <strong>第2章：time时间模块</strong>
+                            </a>
+                            <p>time时间模块通过时间戳，字符串，元祖类型的方式来处理时间问题的python内置模块。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-datatime.html" title="Python datetime库_Python datetime日期时间模块_Python datetime函数api大全" target="_blank">
+                                <strong>第3章：datetime模块</strong>
+                            </a>
+                            <p>python中datetime模块和之前学习的time模块都是用来表示时间的，但是两者之间也有一些区别，time模块主要是从机器的角度来表示时间，比如时间戳对于人来说谈不上有比较好的体验，而datetime模块就不一样了，更贴近人对时间的认知。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-calendar.html" title="Python calendar库_Python calendar日历模块_Python calendar函数api大全" target="_blank">
+                                <strong>第4章：calendar日历模块</strong>
+                            </a>
+                            <p>calendar模块是python用来处理日历的模块，通过不同的api和格式输出多种形式的日历格式，下面就通过不同的api和参数来输出和学习calendar模块的用法。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-random.html" title="Python random库_Python random随机数模块_Python random函数api大全" target="_blank">
+                                <strong>第5章：random随机数模块</strong>
+                            </a>
+                            <p>random模块是python的一个内置模块，主要用于生成随机数的，应用场景也很丰富，比如生产验证码，抽签功能等等，random模块中有丰富的api帮助我们处理一些从逻辑上很难实现的功能。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-re.html" title="Python re正则库_Python re正则模块_Python re模块安装和用法" target="_blank">
+                                <strong>第6章：re模块和正则表达式</strong>
+                            </a>
+                            <p>Python 的 re（regular expression）模块提供了正则表达式的支持，可以用于字符串的模式匹配和查找、替换等操作。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-sys.html" title="Python sys库_Python sys系统运行模块_Python sys函数api大全" target="_blank">
+                                <strong>第7章：sys系统运行模块</strong>
+                            </a>
+                            <p>sys模块在python中为python语言提供了一些对对象的使用接口，还提供了对解释器使用或维护的一些变量的访问以及与解释器强  烈交互的函数。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-os.html" title="Python os模块教程_Python os文件|目录操作库函数API方法大全" target="_blank">
+                                <strong>第8章：Python os模块</strong>
+                            </a>
+                            <p>Python 的 os 模块是一个用于操作文件系统的常用模块，可以让 Python 程序执行文件操作、目录操作等。</p>
+                        </li>
+                        
+                        <li>
+                            <a href="/document-list-module-Pillow.html" title="Python Pillow模块教程_Python Pillow图像处理库函数API方法大全" target="_blank">
+                                <strong>第9章：Pillow模块教程</strong>
+                            </a>
+                            <p>Python Pillow 是一个基于 PIL（Python Imaging Library）的第三方图像处理库，提供了各种图像处理和操作功能，包括读取、保存、调整大小、旋转、裁剪、滤镜、颜色调整、文本添加等操作。Pillow 支持多种图像格式，包括 JPEG、PNG、BMP、GIF、TIFF 等常见格式。</p>
+                        </li>
+                        
+
+                    </ul>   
+                </div>
+                
+                <!-- 数据库教程 -->
+                 <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="数据库教程">数据库教程</h2>
+                        <a href="/video.html#sql"><i class="iconfont icon-spbf"></i>视频教程-更新完成</a>
+                    </div>
+                    <div class="download">
+                        <ul class="download-menu">
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-MySql.html">
+                                    <img src="/media/mysql.png" alt="【完整】MySql数据库命令大全_MySql安装使用教程_MySql数据库基础知识">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-MySql.html">MySql数据库教程</a>
+                                    </h3>
+                                    <p>MySQL是一种流行的开源关系型数据库管理系统（RDBMS），它使用SQL（结构化查询语言）作为数据操作语言。MySQL最初由瑞典的开发者创建，在2008年被收购后成为Oracle公司的产品。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-Mongdb.html">
+                                    <img src="/media/MongoDB.png" alt="【完整】Mongdb常用命令大全_Mongdb安装使用教程_Mongdb数据库基本操作手册">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-Mongdb.html">Mongdb数据库教程</a>
+                                    </h3>
+                                    <p>MongoDB是一个面向文档的分布式NoSQL数据库，它使用JSON格式存储数据，并且具有高可用性、可扩展性和灵活性等优点。MongoDB由10gen（现在的MongoDB Inc.）开发并维护，是目前使用最广泛的NoSQL数据库之一。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-Redis.html">
+                                    <img src="/media/redis.png" alt="【完整】Redis数据库_Redis安装使用教程_Redis数据库基础教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-Redis.html">Redis数据库教程</a>
+                                    </h3>
+                                    <p>Redis（Remote Dictionary Server）是一个开源的、基于内存的高性能键值存储数据库，它支持多种数据结构，包括字符串、哈希表、列表、集合、有序集合等，同时还支持事务、Lua脚本、持久化等功能。</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- WEB开发 -->
+                 <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="Python WEB全栈开发教程">Python WEB全栈开发教程</h2>
+                        <a href="/video.html#web"><i class="iconfont icon-spbf"></i>视频教程-更新完成</a>
+                    </div>
+                    <div class="download">
+                        <ul class="download-menu">
+                            
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-html.html">
+                                    <img src="/media/html.png" alt="【完整】HTML简介_ HTML标签属性大全_ HTML网页制作零基础入门教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-html.html">HTML教程</a>
+                                    </h3>
+                                    <p>HTML（Hyper Text Markup Language）是一种标记语言，用于创建Web页面和应用程序的结构。它定义了一些标签和属性，可以用来描述Web页面中的文本、图像、超链接、表格、表单等元素的结构和语义。HTML标签通常以尖括号包围，其中一些标签需要闭合，而另一些标签则是自闭合的。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-css.html">
+                                    <img src="/media/css.png" alt="【完整】CSS简介_ CSS基础教程_CSS菜鸟教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-css.html">CSS基础教程</a>
+                                    </h3>
+                                    <p>CSS（Cascading Style Sheets）是一种用于描述Web页面外观和样式的样式表语言。它可以将HTML文档中的内容与其呈现方式分离，从而使得网页的样式更加灵活、易于维护和管理。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-JavaScript.html">
+                                    <img src="/media/js.png" alt="【完整】JavaScript简介_JavaScript菜鸟教程_JavaScript基础入门教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-JavaScript.html">JavaScript基础教程</a>
+                                    </h3>
+                                    <p>JavaScript是一种高级编程语言，用于在Web浏览器中创建交互式的动态效果。它是一种解释性语言，可以在任何支持JavaScript的Web浏览器中执行，无需编译。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-JQuery.html">
+                                    <img src="/media/jquery.png" alt="【完整】JQuery简介_JQuery菜鸟教程_JQuery中文文档">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-JQuery.html">JQuery教程</a>
+                                    </h3>
+                                    <p>jQuery是一个快速、简洁的JavaScript库，它封装了常见的JavaScript任务，使得编写JavaScript代码变得更加容易和简单。jQuery提供了一种简洁而强大的方式来处理HTML文档遍历、事件处理、动画效果、AJAX请求等。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-django.html">
+                                    <img src="/media/django.png" alt="【完整】Django简介_Django教程文档_django框架菜鸟教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-django.html">Django教程</a>
+                                    </h3>
+                                    <p>Django是一个用Python编写的开源Web框架，它遵循了“MTV”（模型，模板，视图）的设计模式，以帮助开发人员快速构建高质量的Web应用程序。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-flask.html">
+                                    <img src="/media/flask_kQxU2dE.png" alt="【完整】Flask简介_Python Flask框架文档_Flask web开发实战教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-flask.html">Flask框架教程</a>
+                                    </h3>
+                                    <p>Flask是一个轻量级的Python Web框架，它提供了一个简单的方式来构建Web应用程序和API。Flask没有内置的ORM和表单验证等工具，而是鼓励开发人员使用它的扩展和第三方库来构建应用程序。</p>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- GUI图形界面开发 -->
+                <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="Python GUI图形界面开发">Python GUI图形界面开发</h2>
+                        <a href="/video.html#GUI"><i class="iconfont icon-spbf"></i>视频教程-更新中...</a>
+                    </div>
+                    
+                    <div class="download">
+                        <ul class="download-menu">
+                            
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-pyqt5.html">
+                                    <img src="/media/PyQt5.png" alt="【完整】PyQt5教程_PyQt5中文文档_PyQt5菜鸟教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-pyqt5.html">PyQt5教程</a>
+                                    </h3>
+                                    <p>Python GUI界面程序开发框架有很多，PyQt5完美的继承C++的Qt框架基因，本课程从PyQt5基础入门到信号和槽，再到底层事件重写，控件讲解，布局，QtDesigner+PyUIC,QSS,pyqtgraph等等进行了全面的讲解，最后以一个施展案例来总结全部的课程内容。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-TkInter.html">
+                                    <img src="/media/tkinter.png" alt="【完整】Python TkInter教程_ TkInter框架中文入门教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-TkInter.html">Python TkInter教程</a>
+                                    </h3>
+                                    <p>Python TkInter是Python语言的标准GUI（图形用户界面）库，它是一个内置模块，不需要额外安装即可使用。TkInter使用Tk GUI工具包来创建图形用户界面，Tk是一个跨平台的图形库，可在许多操作系统上运行，包括Windows、macOS和Linux。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-WxPython.html">
+                                    <img src="/media/Wxpython.png" alt="【完整】WxPython教程_ WxPython中文入门教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-WxPython.html">WxPython教程</a>
+                                    </h3>
+                                    <p>WxPython是一个开源的Python GUI开发工具包，它提供了一个跨平台的GUI编程接口，支持Windows、macOS、Linux等多个操作系统，可以创建多种GUI应用程序，包括桌面应用程序、游戏、数据分析和可视化工具、Web应用程序等。</p>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <!-- Python爬虫 -->
+                <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="Python爬虫教程">Python爬虫教程</h2>
+                        <a href="/video.html#spider"><i class="iconfont icon-spbf"></i>视频教程-更新中...</a>
+                    </div>
+                    
+                    <div class="download">
+                        <ul class="download-menu">
+                            
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-request.html">
+                                    <img src="/media/python-爬虫请求模块.png" alt="【完整】Python爬虫请求模块Urllib|Requests库安装/使用教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-request.html">Python 爬虫请求模块</a>
+                                    </h3>
+                                    <p>requests和urllib都是Python中常用的HTTP请求库，使用时需要根据实际情况选择。如果要求使用简单、功能完善、性能高的HTTP请求库，可以选择requests；如果需要兼容性更好、功能更加灵活的HTTP请求库，可以选择urllib。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-analysis.html">
+                                    <img src="/media/Query.png" alt="【完整】Python爬虫数据解析|数据处理模块安装/使用教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-analysis.html">Python爬虫数据解析</a>
+                                    </h3>
+                                    <p>【完整】Python爬虫数据解析|数据处理模块安装/使用教程</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-PySpider.html">
+                                    <img src="/media/pyspider.png" alt="【完整】Python PySpider教程_PySpider爬虫框架安装使用教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-PySpider.html">PySpider教程</a>
+                                    </h3>
+                                    <p>PySpider是一个Python编写的分布式网络爬虫框架，它可以帮助开发者快速构建和部署爬虫，并支持爬虫任务的分布式运行。PySpider基于Twisted网络框架和MongoDB数据库，具有高效、稳定、易用等特点，同时还提供了一套Web界面，可以方便地查看爬虫任务的运行状态和结果。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-Scrapy.html">
+                                    <img src="/media/Scrapy.png" alt="【完整】Python Scrapy教程_ Scrapy爬虫框架安装使用教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-Scrapy.html">Scrapy教程</a>
+                                    </h3>
+                                    <p>Scrapy是一个基于Python的开源网络爬虫框架，可用于快速开发高效、可扩展、可重用的爬虫应用程序。</p>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <!-- Python自动化运维 -->
+                <div class="doc float-col">
+                    <div class="title clearfix">
+                        <h2><img src="/static/images/mulu.png" alt="Python自动化运维">Python自动化运维</h2>
+                        <a href="/video.html#linux"><i class="iconfont icon-spbf"></i>视频教程-更新中...</a>
+                    </div>
+                    
+                    <div class="download">
+                        <ul class="download-menu">
+                            
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-linux.html">
+                                    <img src="/media/Linux.png" alt="【完整】Linux系统常用命令_Linux菜鸟教程_Linux入门基础教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-linux.html">Linux入门基础教程</a>
+                                    </h3>
+                                    <p>Linux操作系统广泛用于服务器、个人电脑和移动设备等不同领域。它具有许多优点，包括高度的安全性、稳定性、灵活性、可定制性和可移植性。</p>
+                                </div>
+                            </li>
+                            
+                            <li class="download-list">
+                                <a class="img" href="/document-column-shell.html">
+                                    <img src="/media/Shell.png" alt="【完整】Linux Shell命令_Shell脚本编程_Shell编程菜鸟教程">
+                                </a>
+                                <div class="text">
+                                    <h3>
+                                        <a href="/document-column-shell.html">Linux Shell脚本编程</a>
+                                    </h3>
+                                    <p>Linux Shell命令_Shell脚本编程_Shell编程菜鸟教程</p>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <!-- Python数据分析 -->
+                
+                
+                <!-- Python人工智能 -->
+                
+                
+                <!-- Python量化金融 -->
+                
+                
+                
+            </div>
+            <!-- 右侧边栏 -->
+            <aside class="aside">
+                 <!-- 视频下拉 -->
+                <div class="aside-row">
+                    <div class="aside-title">
+                        <span style="color: #ff8282;">学习/就业/创业/兼职</span>
+                        <a href="/video-column-stu.html" title="学习/就业/创业/兼职">更多教程...</a>
+                    </div>
+                    <ul class="video-explain">
+
+                        
+                        <li class="video-explain-list aside-video-list">
+                            <p>【很重要】初学编程-如何选择适合自己的方向？</p>
+                            <a href="/video-stu-0.html" class="video-link" title="【很重要】初学编程-如何选择适合自己的方向？" rel="nofollow"><img src="/media/index-video.jpg" alt="【很重要】初学编程-如何选择适合自己的方向？"></a>
+                        </li>
+                        
+                        <li class="video-explain-list aside-video-list">
+                            <p>Python的学习方法 &amp; 学习路线 &amp; 课程设计</p>
+                            <a href="/video-stu-1.html" class="video-link" title="Python的学习方法 &amp; 学习路线 &amp; 课程设计" rel="nofollow"><img src="/media/index-video2.jpg" alt="Python的学习方法 &amp; 学习路线 &amp; 课程设计"></a>
+                        </li>
+                        
+                        <li class="video-explain-list aside-video-list">
+                            <p>★接单、创业、兼职★ 项目介绍</p>
+                            <a href="/video-stu-5.html" class="video-link" title="★接单、创业、兼职★ 项目介绍" rel="nofollow"><img src="/media/index-video5.jpg" alt="★接单、创业、兼职★ 项目介绍"></a>
+                        </li>
+                        
+                        <li class="video-explain-list aside-video-list">
+                            <p>【线下线上培训班、线上免费付费自学】区别分析</p>
+                            <a href="/video-stu-2.html" class="video-link" title="【线下线上培训班、线上免费付费自学】区别分析" rel="nofollow"><img src="/media/index-video3.jpg" alt="【线下线上培训班、线上免费付费自学】区别分析"></a>
+                        </li>
+                        
+                       
+                    </ul>
+                </div>
+                <!-- 单独图片 -->
+                <!--<a href="/page-contact.html" rel="nofollow" target="_blank"><img class="aside-img" src="/static/images/222.jpg" alt="contact"></a>-->
+                
+                <!-- 本站推荐 -->
+                <div class="aside-row">
+                    <div class="aside-title">
+                        <span>最新文章</span>
+                    </div>
+                    <ul class="aside-menu">
+                        
+                        <li class="station-list"><a href="/article-chengzhang.html" title="程序员成长中不可避免的难点">程序员成长中不可避免的难点</a></li>
+                        
+                        <li class="station-list"><a href="/article-zhishidian.html" title="那么多知识点还有功能代码记不住怎么办？">那么多知识点还有功能代码记不住怎么办？</a></li>
+                        
+                        <li class="station-list"><a href="/article-guihua.html" title="正确的python学习路线规划">正确的python学习路线规划</a></li>
+                        
+                        <li class="station-list"><a href="/article-luxian.html" title="python学习路线应该怎么规划">python学习路线应该怎么规划</a></li>
+                        
+                        <li class="station-list"><a href="/article-Exception.html" title="python Exception常规异常基类">python Exception常规异常基类</a></li>
+                        
+                        <li class="station-list"><a href="/article-Warning.html" title="python Warning警告有哪些情况">python Warning警告有哪些情况</a></li>
+                        
+                        <li class="station-list"><a href="/article-BaseException.html" title="python异常基类BaseException">python异常基类BaseException</a></li>
+                        
+                        <li class="station-list"><a href="/article-UnicodeError.html" title="python UnicodeError异常一篇文章彻底搞定">python UnicodeError异常一篇文章彻底搞定</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- 左图右文 -->
+                <div class="aside-row">
+                    <div class="aside-title">
+                       <span>推荐教程</span> <!-- 放一些PyCharm之类的教程 -->
+                    </div>
+                    <ul class="aside-menu">
+                        
+                        <li class="img-list"><a href="/article-guihua.html" title="正确的python学习路线规划"><img src="/media/python_LuQ8hwd.jpg" alt="正确的python学习路线规划">正确的python学习路线规划</a></li>
+                        
+                        <li class="img-list"><a href="/article-ckeditor.html" title="django-ckeditor富文本编辑器安装教程"><img src="/media/dj_buYQ6qr.jpg" alt="django-ckeditor富文本编辑器安装教程">django-ckeditor富文本编辑器安装教程</a></li>
+                        
+                        <li class="img-list"><a href="/article-upload.html" title="Django图片上传与显示功能实现流程"><img src="/media/dj_hyYgUqe.jpg" alt="Django图片上传与显示功能实现流程">Django图片上传与显示功能实现流程</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- 排行榜 -->
+                <div class="aside-row">
+                    <div class="aside-title">
+                        <span>热文排行</span>
+                    </div>
+                    <ul class="aside-menu">
+                        
+                        <li class="ranking-list"><span>1</span><a href="/article-BaseException.html" title="python异常基类BaseException">python异常基类BaseException</a></li>
+                        
+                        <li class="ranking-list"><span>2</span><a href="/article-guocheng.html" title="python自学网课程录制过程">python自学网课程录制过程</a></li>
+                        
+                        <li class="ranking-list"><span>3</span><a href="/article-guihua.html" title="正确的python学习路线规划">正确的python学习路线规划</a></li>
+                        
+                        <li class="ranking-list"><span>4</span><a href="/article-Exception.html" title="python Exception常规异常基类">python Exception常规异常基类</a></li>
+                        
+                        <li class="ranking-list"><span>5</span><a href="/article-liucheng.html" title="初学者如何正确的安排学习流程">初学者如何正确的安排学习流程</a></li>
+                        
+                        <li class="ranking-list"><span>6</span><a href="/article-nan.html" title="编程很难，害怕学不好怎么办">编程很难，害怕学不好怎么办</a></li>
+                        
+                        <li class="ranking-list"><span>7</span><a href="/article-luxian.html" title="python学习路线应该怎么规划">python学习路线应该怎么规划</a></li>
+                        
+                        <li class="ranking-list"><span>8</span><a href="/article-peixun.html" title="为什么不办培训班只用视频教学">为什么不办培训班只用视频教学</a></li>
+                        
+                        <li class="ranking-list"><span>9</span><a href="/article-UnicodeError.html" title="python UnicodeError异常一篇文章彻底搞定">python UnicodeError异常一篇文章彻底搞定</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- 视频推荐 -->
+
+                <!-- 标签云 -->
+                <div class="aside-row">
+                    <div class="aside-title">
+                        <span>标签</span>
+                    </div>
+                    <ul class="aside-menu clearfix">
+                        
+                        <li class="cloud-list"><a href="/tag-Error/" title="">Error</a></li>
+                        
+                        <li class="cloud-list"><a href="/tag-Warning/" title="">Warning</a></li>
+                        
+                        <li class="cloud-list"><a href="/tag-UnicodeError/" title="">UnicodeError</a></li>
+                        
+                        <li class="cloud-list"><a href="/tag-editor/" title="">富文本</a></li>
+                        
+                        <li class="cloud-list"><a href="/tag-ValueError/" title="">ValueError</a></li>
+                        
+                        <li class="cloud-list"><a href="/tag-java/" title="">java</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </aside>
+        </div>
+    </main>
+    <!-- 回顶部 -->
+    <div class="sTop">
+        <i class="iconfont icon-up"></i>
+        <div>回顶部</div>
+    </div>
+     <!-- #友情链接  -->
+        <div class="container">
+            <div class="whole-box index_link">
+                <div class="row-title-box friend-link-box">
+                    <div class="row-title">
+                        <span class="title-text"># 友情链接</span>
+                    </div>
+                </div>
+                <ul class="friend-link">
+                    <li><a href="http://www.pyqt5.cn/" target="_blank" title="PyQt5中文网">PyQt5中文网</a></li>
+                    <li><a href="https://www.mysql.com/" target="_blank" title="MySQL官网" rel="nofollow">MySQL官网</a></li>
+                    <li><a href="https://www.python.org/" target="_blank" title="Python官网" rel="nofollow">Python官网</a></li>
+                    <li><a href="https://requests.readthedocs.io/en/latest/" target="_blank" title="Requests" rel="nofollow">Requests</a></li>
+                </ul>
+            </div>
+        </div>
+   
+    <!-- 底部 -->
+    <footer class="footer whole white-style"  style="margin-top:10px;">
+        <div class="footer-box container">
+            <div class="footer-top clearfix">
+                <div class="footer-down">
+                    <div class="logo-name"><span>Python自学网</span> ：让python学习变得更简单！</div>
+                    <div class="shuoming clearfix">
+                        <div>开发者：村长</div>
+                        <div>应用版本：1.2.1</div>
+                        <div>技术支持：PyQt5中文网</div>
+                        <div>Copyright © 2021 Python自学网 All Rights Reserved.</div>
+                    </div>
+                    <div class="shuoming clearfix">
+                        <div>开发者：滁州悦凡网络</div>
+                        <div>Since：2021-11-21</div>
+                        <div>版权所有，请勿随意转发本站所有视频内容！</div>
+                    </div>
+                    <div class="shuoming">
+                        <div><a href="/page-about.html" rel="nofollow" target="_blank">关于我们</a></div>
+                        <div><a href="/page-contact.html" rel="nofollow" target="_blank">联系方式</a></div>
+                        <div><a href="http://www.wakey.com.cn/sitemap.html" target="_blank">HTML地图</a></div>
+                        <div><a href="http://www.wakey.com.cn/sitemap.xml" target="_blank">XML地图</a></div>
+                        <div><a href="http://www.wakey.com.cn/sitemap.txt" target="_blank">TXT地图</a></div>
+                        <div>备案：<a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">皖ICP备2022006822号-2</a></div>
+                    </div>
+                </div>
+                <div class="qr-code">
+                    <div class="code">
+                        <img src="/static/images/gongzhong.jpg" alt="Python自学网公众号">
+                        <div>关注Python自学网公众号</div>
+                    </div>
+                    <div class="code">
+                        <img src="/static/images/bozhu.jpg" alt="老师微信">
+                        <div>扫一扫添加微信</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </footer>
+</body>
+</html>
