@@ -3,12 +3,13 @@
 # 自然数n的阶乘写作n!
 
 def factorial(number):
-    result=1
-    while number>0:
-        result*=number
-        number-=1
+    result = 1
+    while number > 0:
+        result *= number
+        number -= 1
     return result
 
-print('3的阶乘=',factorial(3))
-print('6的阶乘=',factorial(6))
-print('100的阶乘=',factorial(100))
+
+print('3的阶乘=', factorial(3))
+print('6的阶乘=', factorial(6))
+print('100的阶乘=', factorial(100))
