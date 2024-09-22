@@ -24,13 +24,12 @@ def fib(n):
 # print(fib(21))
 
 def gcd(a: int, b: int):
-    if a >= b >= 0:
-        r = a % b
-        while b != 0:
-            a, b = b, a % b
+    # 确保 a >= b
+    if a < b:
+        a, b = b, a
+    while b != 0:
+        a, b = b, a % b
         return a
-    else:
-        return "请输入正确的正整数！！"
 
 
 print(gcd(48, 18))  # 输出: 6

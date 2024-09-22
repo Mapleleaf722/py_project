@@ -40,5 +40,5 @@ for i in range(2, 11):
         filename = f'{a}.jpg'
         a += 1
         response = request.urlopen(j)
-        with open(f'和谐过的皮肤/{filename}', 'wb') as f:
+        with open(f'三国杀皮肤图/{filename}', 'wb') as f:
             f.write(response.read())
