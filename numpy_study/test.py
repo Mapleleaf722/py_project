@@ -1,5 +1,5 @@
 import numpy as np
 
-a = np.arange(24).reshape((2, 3, 4))
+a = np.arange(24).reshape((3, 8))
 
-print(np.square(a))
+print(a.itemsize)
