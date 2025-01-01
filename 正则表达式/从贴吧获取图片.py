@@ -13,7 +13,7 @@ def get_html(url_):
     return html
 
 
-# print(get_html(url))
+# print(get_html(url_img))
 def data_clean(html):
     p = re.compile(r'<img class="BDE_Image" src="([^"]+\.jpg[^"]+)"')
     urls = p.findall(html_tieba)

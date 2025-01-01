@@ -1,9 +1,9 @@
 from urllib import request
 
-# url = 'http://v6.huanqiucdn.cn/4394989evodtranscq1500012236/d97faeb05576678021659148128/v.f100830.mp4'
+# url_img = 'http://v6.huanqiucdn.cn/4394989evodtranscq1500012236/d97faeb05576678021659148128/v.f100830.mp4'
 #
 #
-# res = request.urlopen(url)
+# res = request.urlopen(url_img)
 # with open('网络请求/123.mp4', 'wb') as f:
 #     f.write(res.read())
 
